@@ -37,7 +37,7 @@ To run the platform and local database server on your machine:
    python server.py
    ```
 
-3. Open your browser and navigate to: [http://localhost:8000](http://localhost:8000)
+
 
 ## Deployment Disclaimer
 
@@ -45,3 +45,4 @@ If deploying to static hosting environments (like Vercel or GitHub Pages), the H
 
 --- 
 *An initiative by KaroStartup.*
+*made by JD*
