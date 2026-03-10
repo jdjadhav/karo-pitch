@@ -2,7 +2,7 @@
 
 A premium startup discovery and funding platform landing page designed to connect Bharat entrepreneurs with investors. Features a stunning, modern dark/light mode dark glassmorphism aesthetic with engaging scroll animations, dynamic background orbs, an interactive applicant experience, and a lightweight Python backend.
 
-![Karo Pitch Preview](assets/hero-bg.png)
+<img width="2000" height="2000" alt="LOGO" src="https://github.com/user-attachments/assets/990d9f07-6b63-4aa5-99a0-ce828c32edfc" />
 
 ## Features
 
