@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Application | Karo Pitch</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+        <div class="bg-orb bg-orb-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container" style="justify-content: space-between;">
+            <a href="index.html" class="logo">
+                Karo<span>Pitch</span>
+            </a>
+            <div style="font-weight: 600; color: var(--text-dark);">
+                <i class="fas fa-user-circle text-primary me-2"></i> Founder Portal
+            </div>
+        </div>
+    </nav>
+
+    <!-- Application Form Section -->
+    <section class="auth-section">
+        <div class="container" style="display: flex; justify-content: center; align-items: flex-start;">
+
+            <div class="form-container glass-card fade-up" style="width: 100%; margin-top: 20px;">
+                <div class="section-header text-center" style="margin-bottom: 40px;">
+                    <h2 class="section-title">Complete Your <span class="text-gradient">Pitch Profile</span></h2>
+                    <p class="section-subtitle">Submit your details to be considered for the next Karo Pitch cohort.</p>
+                </div>
+
+                <form id="startup-apply-form" class="apply-form" action="index.html" method="GET">
+
+                    <h3
+                        style="margin-bottom: 20px; font-family: var(--font-heading); color: var(--text-dark); border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                        1. Founder Information</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="founderName">Full Name *</label>
+                            <input type="text" id="founderName" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="founderRole">Role / Designation *</label>
+                            <input type="text" id="founderRole" required placeholder="CEO & Co-founder">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Work Email Address *</label>
+                            <input type="email" id="email" required placeholder="founder@startup.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" required placeholder="+91 9876543210">
+                        </div>
+                    </div>
+
+                    <h3
+                        style="margin-bottom: 20px; margin-top: 40px; font-family: var(--font-heading); color: var(--text-dark); border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                        2. Startup Details</h3>
+
+                    <div class="form-group">
+                        <label for="startupName">Startup Name *</label>
+                        <input type="text" id="startupName" required placeholder="Acme Corp Pvt Ltd">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="category">Primary Category *</label>
+                            <select id="category" required>
+                                <option value="" disabled selected>Select Category</option>
+                                <option value="d2c">D2C Brand</option>
+                                <option value="consumer">Consumer Startup</option>
+                                <option value="msme">MSME</option>
+                                <option value="saas">SaaS Software</option>
+                                <option value="manufacturing">Manufacturing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="headquarters">Headquarters City *</label>
+                            <input type="text" id="headquarters" required placeholder="e.g. Jaipur, Pune, Indore">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="website">Company Website / Social Link</label>
+                        <input type="url" id="website" placeholder="https://www.yourstartup.com">
+                    </div>
+
+                    <h3
+                        style="margin-bottom: 20px; margin-top: 40px; font-family: var(--font-heading); color: var(--text-dark); border-bottom: 1px solid var(--border-color); padding-bottom: 10px;">
+                        3. Funding & Traction</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fundingStage">Current Funding Stage *</label>
+                            <select id="fundingStage" required>
+                                <option value="" disabled selected>Select Stage</option>
+                                <option value="bootstrapped">Bootstrapped</option>
+                                <option value="angel">Angel / Friends & Family</option>
+                                <option value="pre-seed">Pre-Seed</option>
+                                <option value="seed">Seed</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="revenue">Monthly Revenue (Optional)</label>
+                            <input type="text" id="revenue" placeholder="e.g. ₹5 Lakhs MRR">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pitchDeck">Pitch Deck URL (Google Drive / DocSend) *</label>
+                        <input type="url" id="pitchDeck" required placeholder="https://link-to-deck...">
+                        <small style="color: var(--text-muted); display: block; margin-top: 5px;">Please ensure link
+                            sharing is set to 'Anyone with the link can view'.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Brief Description of your Business *</label>
+                        <textarea id="description" rows="5" required
+                            placeholder="1. What problem are you solving?&#10;2. Who is your target customer?&#10;3. What makes you different?"></textarea>
+                    </div>
+
+                    <div style="margin-top: 40px;">
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Submit
+                            Pitch Application <i class="fas fa-paper-plane" style="margin-left: 8px;"></i></button>
+                        <p class="form-terms text-center text-muted mt-3" style="font-size: 0.85rem;">By submitting, you
+                            agree to Karo Pitch's Terms and Conditions and Privacy Policy.</p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="padding-top: 40px; margin-top: auto;">
+        <div class="container text-center">
+            <p class="text-muted text-small">&copy; 2026 KaroPitch. An initiative by KaroStartup. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karo Pitch | Pitch Your Startup to India's Top Investors</title>
+    <meta name="description"
+        content="Karo Pitch connects early-stage founders from across India with investors through curated pitch events and a discovery platform.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+        <div class="bg-orb bg-orb-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                Karo<span>Pitch</span>
+            </a>
+            <div class="nav-links">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#categories">Who Can Apply</a>
+                <a href="#investors">Investors</a>
+                <a href="#startups">Featured Startups</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn btn-icon" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="auth.html" class="btn btn-primary btn-sm">Apply Now</a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <canvas id="globe-canvas" class="globe-canvas"></canvas>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge fade-up">
+                    <span class="pulse-dot"></span> Applications Now Open for Season 1
+                </div>
+                <h1 class="hero-title fade-up" style="animation-delay: 0.1s;">
+                    Pitch Your Startup to <span class="text-gradient">India’s Top Investors.</span>
+                </h1>
+                <p class="hero-subtitle fade-up" style="animation-delay: 0.2s;">
+                    Karo Pitch is the premier platform where early-stage founders from across India—especially from
+                    Tier-2, Tier-3 cities and Bharat—can pitch their businesses directly to investors, raise funding,
+                    and scale rapidly.
+                </p>
+                <div class="hero-buttons fade-up" style="animation-delay: 0.3s;">
+                    <a href="auth.html" class="btn btn-primary btn-lg">
+                        Apply to Pitch <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#startups" class="btn btn-secondary btn-lg">
+                        Explore Startups
+                    </a>
+                </div>
+                <div class="hero-stats fade-up" style="animation-delay: 0.4s;">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Investors</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">₹100Cr+</span>
+                        <span class="stat-label">Funding Potential</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10k+</span>
+                        <span class="stat-label">Founder Community</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Karo Pitch Section -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h2 class="section-title">Bridging the Gap for <span class="text-gradient">Bharat’s Founders</span></h2>
+                <p class="section-subtitle">Empowering the next generation of Indian entrepreneurs.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card fade-in">
+                    <div class="about-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>What is Karo Pitch?</h3>
+                    <p>A structured platform designed similar to a closed-room investor pitch event. Selected startups
+                        present their businesses live in front of top-tier investors looking for the next big ideas.</p>
+                </div>
+                <div class="about-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="about-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Why was it created?</h3>
+                    <p>Thousands of founders are building real, profitable businesses in categories like manufacturing,
+                        D2C, and MSMEs across India, but they struggle to access investors, mentorship, and visibility.
+                        We're here to change that.</p>
+                </div>
+                <div class="about-card fade-in" style="animation-delay: 0.4s;">
+                    <div class="about-icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3>The Bharat Mission</h3>
+                    <p>Our long-term vision is to build India’s most accessible startup discovery and funding platform,
+                        strictly focused on shining a spotlight on the untold potential of Bharat entrepreneurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works section-padding" id="how-it-works">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h2 class="section-title">Your Journey to <span class="text-gradient">Funding</span></h2>
+                <p class="section-subtitle">A simple, transparent 4-step process to get your startup funded.</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-line"></div>
+
+                <div class="step fade-in">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-file-alt"></i></div>
+                        <h3>Apply with your Pitch Deck</h3>
+                        <p>Submit your application with your current traction, business model, and pitch deck.</p>
+                    </div>
+                </div>
+
+                <div class="step fade-in" style="animation-delay: 0.2s;">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+                        <h3>Get Shortlisted</h3>
+                        <p>The KaroStartup team reviews all applications and shortlists the most promising startups.</p>
+                    </div>
+                </div>
+
+                <div class="step fade-in" style="animation-delay: 0.4s;">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-microphone-alt"></i></div>
+                        <h3>Pitch Live to Investors</h3>
+                        <p>Present your business in a structured pitch session directly to a curated panel of investors.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step fade-in" style="animation-delay: 0.6s;">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <div class="step-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Raise Funding & Scale</h3>
+                        <p>Secure term sheets, close your round, and gain the capital needed to scale your business.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Can Apply (Categories) Section -->
+    <section class="categories section-padding" id="categories">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h2 class="section-title">Who Can <span class="text-gradient">Apply?</span></h2>
+                <p class="section-subtitle">We are looking for real businesses with real revenues and growth potential.
+                </p>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-card fade-in">
+                    <i class="fas fa-box-open"></i>
+                    <h3>D2C Brands</h3>
+                    <p>Direct-to-consumer physical product brands with early market traction.</p>
+                </div>
+                <div class="category-card fade-in">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Consumer Startups</h3>
+                    <p>B2C services, retail tech, and consumer internet applications.</p>
+                </div>
+                <div class="category-card fade-in">
+                    <i class="fas fa-industry"></i>
+                    <h3>MSMEs</h3>
+                    <p>Micro, Small & Medium Enterprises looking for equity capital to expand.</p>
+                </div>
+                <div class="category-card fade-in">
+                    <i class="fas fa-cloud"></i>
+                    <h3>SaaS Startups</h3>
+                    <p>Software as a Service products solving real B2B or B2C problems.</p>
+                </div>
+                <div class="category-card fade-in">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Manufacturing</h3>
+                    <p>Core manufacturing businesses aiming for technology-driven scaling.</p>
+                </div>
+                <div class="category-card fade-in">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Bharat-Focused</h3>
+                    <p>Solutions specifically built for Tier 2, Tier 3, and rural Indian markets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investors Section -->
+    <section class="investors section-padding" id="investors">
+        <div class="container text-center">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Meet Investors Looking for the <span class="text-gradient">Next Big
+                        Startup</span></h2>
+                <p class="section-subtitle">We partner with India's leading VC firms, Family Offices, and Angel
+                    Networks.</p>
+            </div>
+
+            <div class="investor-logos fade-in">
+                <div class="investor-logo-placeholder"><span>Top Tier VC</span></div>
+                <div class="investor-logo-placeholder"><span>Angel Network</span></div>
+                <div class="investor-logo-placeholder"><span>Family Office</span></div>
+                <div class="investor-logo-placeholder"><span>Micro VC Fund</span></div>
+                <div class="investor-logo-placeholder"><span>Strategic Investor</span></div>
+            </div>
+            <p class="mt-4 text-muted fade-in" style="font-size: 0.9rem;">(Investor announcements coming soon)</p>
+        </div>
+    </section>
+
+    <!-- Featured Startups -->
+    <section class="startups section-padding" id="startups">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h2 class="section-title">Featured <span class="text-gradient">Startups</span></h2>
+                <p class="section-subtitle">Discover some of the promising startups in our ecosystem.</p>
+            </div>
+
+            <div class="startup-grid">
+                <!-- Startup Card 1 -->
+                <div class="startup-card fade-in">
+                    <div class="startup-img mockup-bg-1">
+                        <div class="startup-badge">D2C Brand</div>
+                    </div>
+                    <div class="startup-info">
+                        <h3>Loom & Leaf</h3>
+                        <p class="startup-desc">Sustainable handwoven apparel brand directly sourcing from Indian
+                            artisans to urban consumers.</p>
+                        <a href="#" class="btn btn-outline btn-sm">View Profile <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Startup Card 2 -->
+                <div class="startup-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="startup-img mockup-bg-2">
+                        <div class="startup-badge">SaaS</div>
+                    </div>
+                    <div class="startup-info">
+                        <h3>VyaparTech</h3>
+                        <p class="startup-desc">A mobile-first GST billing and inventory management software built
+                            specifically for Tier-3 retailers.</p>
+                        <a href="#" class="btn btn-outline btn-sm">View Profile <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Startup Card 3 -->
+                <div class="startup-card fade-in" style="animation-delay: 0.4s;">
+                    <div class="startup-img mockup-bg-3">
+                        <div class="startup-badge">Manufacturing</div>
+                    </div>
+                    <div class="startup-info">
+                        <h3>AeroParts Make</h3>
+                        <p class="startup-desc">Precision drone component manufacturing unit based in Pune aiming for
+                            export markets.</p>
+                        <a href="#" class="btn btn-outline btn-sm">View Profile <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About KaroStartup & CTA -->
+    <section class="about-karostartup section-padding" id="about-ks">
+        <div class="container">
+            <div class="ks-flex fade-in">
+                <div class="ks-content">
+                    <h2 class="section-title">Powered by <span class="text-gradient">KaroStartup</span></h2>
+                    <p>KaroPitch is an initiative by KaroStartup, one of India’s largest startup storytelling platforms.
+                        For the past 5 years, we have been dedicated to showcasing the journeys of entrepreneurs.</p>
+                    <ul class="ks-list">
+                        <li><i class="fas fa-check-circle"></i> Thousands of startup stories published</li>
+                        <li><i class="fas fa-check-circle"></i> A massive founder and investor community</li>
+                        <li><i class="fas fa-check-circle"></i> Millions of monthly content impressions</li>
+                    </ul>
+                </div>
+                <div class="ks-cta glass-card">
+                    <h2>Ready to Pitch Your Startup?</h2>
+                    <p>Don't miss the opportunity to showcase your business to India's leading investors. Apply for the
+                        current cohort now.</p>
+                    <div class="cta-buttons">
+                        <a href="#apply" class="btn btn-primary btn-lg w-100 mb-3">Apply Now</a>
+                        <a href="mailto:business@karostartup.com" class="btn btn-secondary btn-lg w-100">Partner With
+                            Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Now Form Section -->
+    <section class="apply-section section-padding" id="apply">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h2 class="section-title">Apply to <span class="text-gradient">Pitch</span></h2>
+                <p class="section-subtitle">Submit your startup details to be considered for the next cohort.</p>
+            </div>
+
+            <div class="form-container glass-card fade-in">
+                <form id="startup-apply-form" class="apply-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="founderName">Founder Name *</label>
+                            <input type="text" id="founderName" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="startupName">Startup Name *</label>
+                            <input type="text" id="startupName" required placeholder="Acme Corp">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" required placeholder="founder@startup.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" required placeholder="+91 9876543210">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Startup Category *</label>
+                        <select id="category" required>
+                            <option value="" disabled selected>Select Category</option>
+                            <option value="d2c">D2C Brand</option>
+                            <option value="consumer">Consumer Startup</option>
+                            <option value="msme">MSME</option>
+                            <option value="saas">SaaS Software</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fundingStage">Current Funding Stage *</label>
+                        <select id="fundingStage" required>
+                            <option value="" disabled selected>Select Stage</option>
+                            <option value="bootstrapped">Bootstrapped</option>
+                            <option value="angel">Angel / Friends & Family</option>
+                            <option value="pre-seed">Pre-Seed</option>
+                            <option value="seed">Seed</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pitchDeck">Pitch Deck URL (Google Drive / DocSend) *</label>
+                        <input type="url" id="pitchDeck" required placeholder="https://link-to-deck...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Brief Description of your Business *</label>
+                        <textarea id="description" rows="4" required
+                            placeholder="What problem are you solving and how big is the market?"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg w-100" style="margin-top: 10px;">Submit
+                        Application</button>
+                    <p class="form-terms text-center text-muted mt-3" style="font-size: 0.85rem;">By submitting, you
+                        agree to our terms and conditions.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo mb-3 d-inline-block">Karo<span>Pitch</span></a>
+                    <p class="text-muted">India's most accessible startup discovery and funding platform for Bharat
+                        entrepreneurs.</p>
+                    <div class="social-links mt-4">
+                        <a href="https://www.instagram.com/karo_startup_/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/karo-startup/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/karo_startup" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/karostartup" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/@karostartup/videos" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#startups">Startups</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope text-primary me-2"></i> business@karostartup.com</p>
+                    <p><i class="fas fa-phone-alt text-primary me-2"></i> +91 9315194393</p>
+                    <a href="https://karostartup.com" target="_blank"
+                        class="text-primary mt-2 d-inline-block">karostartup.com <i
+                            class="fas fa-external-link-alt ms-1 text-small"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KaroPitch. An initiative by KaroStartup. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="globe.js"></script>
+</body>
+
+</html>

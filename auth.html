@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Karo Pitch</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+        <div class="bg-orb bg-orb-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                Karo<span>Pitch</span>
+            </a>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn btn-icon" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Auth Section -->
+    <section class="auth-section">
+        <div class="container" style="display: flex; justify-content: center; align-items: center; min-height: 80vh;">
+
+            <div class="auth-card glass-card fade-up">
+
+                <!-- Toggle Tabs -->
+                <div class="auth-tabs">
+                    <button class="auth-tab active" onclick="showLogin()">Login</button>
+                    <button class="auth-tab" onclick="showRegister()">Register</button>
+                </div>
+
+                <!-- Login Form -->
+                <form id="loginForm" class="auth-form" action="application.html" method="GET">
+                    <div class="section-header text-center" style="margin-bottom: 30px;">
+                        <h2 class="section-title" style="font-size: 2rem;">Welcome <span
+                                class="text-gradient">Back</span></h2>
+                        <p class="section-subtitle">Login to track your pitch application.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginEmail">Email Address</label>
+                        <input type="email" id="loginEmail" required placeholder="founder@startup.com"
+                            class="auth-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" required placeholder="Enter password"
+                            class="auth-input">
+                    </div>
+
+                    <div class="auth-options"
+                        style="display: flex; justify-content: space-between; margin-bottom: 24px; font-size: 0.9rem;">
+                        <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="text-primary" style="text-decoration: none;">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Login to Continue <i
+                            class="fas fa-arrow-right"></i></button>
+                </form>
+
+                <!-- Registration Form (Hidden by default) -->
+                <form id="registerForm" class="auth-form" style="display: none;" action="application.html" method="GET">
+                    <div class="section-header text-center" style="margin-bottom: 30px;">
+                        <h2 class="section-title" style="font-size: 2rem;">Create an <span
+                                class="text-gradient">Account</span></h2>
+                        <p class="section-subtitle">Register to apply for Karo Pitch.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regName">Full Name</label>
+                        <input type="text" id="regName" required placeholder="John Doe" class="auth-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regEmail">Email Address</label>
+                        <input type="email" id="regEmail" required placeholder="founder@startup.com" class="auth-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regPassword">Password</label>
+                        <input type="password" id="regPassword" required placeholder="Create password"
+                            class="auth-input">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg w-100" style="margin-top: 10px;">Register &
+                        Apply <i class="fas fa-arrow-right"></i></button>
+                    <p class="form-terms text-center text-muted mt-3" style="font-size: 0.85rem;">By registering, you
+                        agree to our Terms of Service.</p>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        function showLogin() {
+            document.getElementById('loginForm').style.display = 'block';
+            document.getElementById('registerForm').style.display = 'none';
+            document.querySelectorAll('.auth-tab')[0].classList.add('active');
+            document.querySelectorAll('.auth-tab')[1].classList.remove('active');
+        }
+
+        function showRegister() {
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('registerForm').style.display = 'block';
+            document.querySelectorAll('.auth-tab')[0].classList.remove('active');
+            document.querySelectorAll('.auth-tab')[1].classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
